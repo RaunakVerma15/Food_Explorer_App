@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Explorer - Restaurants</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .header, .footer {
+            background-color: #495057;
+            color: white;
+            padding: 10px 0;
+        }
+        .header .navbar-nav .nav-link {
+            color: white !important;
+        }
+        body {
+            background-color: #343a40;
+            color: white;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            background-color: #495057;
+        }
+        .section-title {
+            margin-top: 30px;
+        }
+        .title {
+            font-family: 'Arial', sans-serif;
+            font-size: 2.5rem;
+            color: #f8f9fa;
+            text-align: center;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand title" href="#">
+                <img src="images/logo.png" alt="Food Explorer Logo" style="width: 80px; height: auto;">
+                Food Explorer
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search.html">Search</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <h1>Restaurants</h1>
+        <div id="restaurantsList" class="row">
+            <!-- Dynamic restaurants will be added here -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>&copy; 2024 Food Explorer. All rights reserved.</p>
+        <p><a href="privacy.html" class="text-white">Privacy Policy</a> | <a href="terms.html" class="text-white">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            var item = urlParams.get('cuisinesList');
+            var parameter = 'cuisine'
+            console.log(item)
+            // Use stored location data to call backend API
+            const latitude = localStorage.getItem('latitude');
+            const longitude = localStorage.getItem('longitude');
+            const pincode = localStorage.getItem('pincode');
+            if (item === null || item === ''){ 
+                item = urlParams.get('dishesList')
+                parameter = 'dish'
+            }
+            console.log(parameter)
+            url = `http://localhost:5000/restaurants?${parameter}=${encodeURIComponent(item)}&pincode=${pincode}`
+            if (latitude && longitude) {
+                url = `http://localhost:5000/restaurants?${parameter}=${encodeURIComponent(item)}&lat=${latitude}&lng=${longitude}`
+            }
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    const restaurantsList = document.getElementById('restaurantsList');
+                    restaurantsList.innerHTML = '';
+
+                    data.forEach(restaurant => {
+                        const card = document.createElement('div');
+                        card.className = 'col-md-4 mb-3';
+                        card.innerHTML = `
+                            <div class="card text-white">
+                                <div style="overflow: hidden; max-height:250px">
+                                    <img src="${restaurant.image}" class="card-img-top" alt="${restaurant.name}" style="height:100%; width:100%; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">${restaurant.name}</h5>
+                                    <p class="card-text">Cuisine: ${restaurant.cuisine}</p>
+                                    <p class="card-text">Rating: ${restaurant.rating}</p>
+                                    <div style="display: inline; display: flex; justify-content: center;">
+                                        <button style="margin-right: 5px;" class="btn btn-info" onclick="window.location.href='reviews.html?restaurant_id=${restaurant.id}'">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        restaurantsList.appendChild(card);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching restaurants:', error);
+                });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "name":"Vegetarian"
+    },
+    {
+        "id":2,
+        "name":"Desert"
+    },
+    {
+        "id":3,
+        "name":"Non-Vegetarin"
+    },
+    {
+        "id":4,
+        "name":"Starters"
+    },
+    {
+        "id":5,
+        "name":"Juice & Shakes"
+    },
+    {
+        "id":6,
+        "name":"Fast Food"
+    },
+    {
+        "id":7,
+        "name":"Main Course"
+    }
+    
+
+]

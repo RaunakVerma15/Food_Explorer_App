@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Italian",
+        "description":"Enjoy the Great Taste of Italian Restaurants",
+        "image": "images/cuisines/italian.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Japanese",
+        "description":"Enjoy the Great Taste of Japanese Restaurants",
+        "image": "images/cuisines/japanese.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Mexican",
+        "description":"Enjoy the Great Taste of Mexican Restaurants",
+        "image": "images/cuisines/mexican.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Indian",
+        "description":"Enjoy the Great Taste of Indian Restaurants",
+        "image": "images/cuisines/indian.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Chinese",
+        "description":"Enjoy the Great Taste of Chinese Restaurants",
+        "image": "images/cuisines/chinese.jpg"
+    }
+]

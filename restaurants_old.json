@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "name": "The Italian Place",
+        "cuisine": "Italian",
+        "rating": 4.5,
+        "image": "images/restaurants/italian_place.jpg",
+        "dishes": [1, 2, 3],
+        "reviews": []
+    },
+    {
+        "id": 2,
+        "name": "Sushi World",
+        "cuisine": "Japanese",
+        "rating": 4.8,
+        "image": "images/restaurants/sushi_world.jpg",
+        "dishes": [4, 5, 6],
+        "reviews": []
+    },
+    {
+        "id": 1,
+        "name": "The Hawana Palace",
+        "cuisine": "Indian",
+        "rating": 4.5,
+        "image": "images/restaurants/indian_place.jpg",
+        "dishes": [1, 2, 3],
+        "reviews": []
+    },
+    {
+        "id": 2,
+        "name": "Mexican City",
+        "cuisine": "Mexican",
+        "rating": 4.8,
+        "image": "images/restaurants/mexican_place.jpg",
+        "dishes": [4, 5, 6],
+        "reviews": []
+    },
+    {
+        "id": 1,
+        "name": "Royal Galaxy",
+        "cuisine": "Indian",
+        "rating": 4.2,
+        "image": "images/restaurants/indian_place.jpg",
+        "dishes": [30, 31, 32],
+        "reviews": []
+    }
+]

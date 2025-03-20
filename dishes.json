@@ -1,0 +1,338 @@
+[
+    {
+        "id": 1,
+        "name": "Pizza",
+        "image": "images/dishes/pizza.jpg",
+        "cuisine": "Italian",
+        "category":["Fast Food"]
+    },
+    {
+        "id": 2,
+        "name": "Pasta",
+        "image": "images/dishes/pasta.jpg",
+        "cuisine": "Italian",
+        "category":["Fast Food"]
+    },
+    {
+        "id": 3,
+        "name": "Lasagna",
+        "image": "images/dishes/lasagna.jpg",
+        "cuisine": "Italian",
+        "category":["Fast Food"]
+    },
+    {
+        "id": 4,
+        "name": "Sushi",
+        "image": "images/dishes/sushi.jpg",
+        "cuisine": "Japanese",
+        "category":["Main Course"]
+    },
+    {
+        "id": 5,
+        "name": "Ramen",
+        "image": "images/dishes/ramen.jpg",
+        "cuisine": "Japanese",
+        "category":["Main Course"]
+    },
+    {
+        "id": 6,
+        "name": "Tempura",
+        "image": "images/dishes/tempura.jpg",
+        "cuisine": ["Japanese"],
+        "category":["Main Course"]
+    },
+    {
+        "id":7,
+        "name":"French Fries",
+        "cuisine":"Indian",
+        "image":"images/dishes/fries.jpg",
+        "category":["Starters"]
+    },
+    {
+        "id":8,
+        "name":"Noodles",
+        "cuisine":"Chinese",
+        "image":"images/dishes/noodles.jpg",
+        "category":["Fast Food"]
+    },
+    {
+        "id":9,
+        "name":"Pav Bhaji",
+        "cuisine":"Indian",
+        "image":"images/dishes/pavbhaji.jpg",
+        "category":["Fast Food"]
+    },
+    {
+        "id":10,
+        "name":"Momos",
+        "cuisine":"Chinese",
+        "image":"images/dishes/momos.jpg",
+        "category":["Fast Food"]
+    },
+    {
+        "id":11,
+        "name":"Chicken Biryani",
+        "cuisine":"Indian",
+        "image":"images/dishes/biryani.jpg",
+        "category":["Non-Vegetarian"]
+    },
+    {
+        "id":12,
+        "name":"Chicken Cheese Roll",
+        "cuisine":"Indian",
+        "image":"images/dishes/chickencheese.jpg",
+        "category":["Non-Vegetarian"]
+    },
+    {
+        "id":13,
+        "name":"Pastry",
+        "cuisine":"Indian",
+        "image":"images/dishes/pastry.jpg",
+        "category":["Desert"]
+    },
+    {
+        "id":14,
+        "name":"Cannoli",
+        "cuisine":"Italian",
+        "image":"images/dishes/cannoli.jpg",
+        "category":["Desert"]
+    },
+    {
+        "id":15,
+        "name":"Brownie",
+        "cuisine":"Indian",
+        "image":"images/dishes/brownie.jpg",
+        "category":["Desert"]
+    },
+    {
+        "id":16,
+        "name":"Brownie",
+        "cuisine":"Indian",
+        "image":"images/dishes/brownie.jpg",
+        "category":["Desert"]
+    },
+    {
+        "id":17,
+        "name":"Mango Juice",
+        "cuisine":"Indian",
+        "image":"images/dishes/mangojuice.jpg",
+        "category":["Juice'n Shakes"]
+    },
+    {
+        "id":18,
+        "name":"Orange Juice",
+        "cuisine":"Indian",
+        "image":"images/dishes/orangejuice.jpg",
+        "category":["Juice'n Shakes"]
+    },
+    {
+        "id":19,
+        "name":"Oreo Shake",
+        "cuisine":"Indian",
+        "image":"images/dishes/oreoshake.jpg",
+        "category":["Juice'n Shakes"]
+    },
+    {
+        "id":20,
+        "name":"Kitkat Shake",
+        "cuisine":"Indian",
+        "image":"images/dishes/kitkatshake.jpg",
+        "category":["Juice'n Shakes"]
+    },
+    {
+        "id":21,
+        "name":"Hot Chocolate",
+        "cuisine":"Indian",
+        "image":"images/dishes/hotchocolate.jpg",
+        "category":["Juice'n Shakes"]
+    },
+    {
+        "id":22,
+        "name":"Mangonada",
+        "cuisine":"Mexican",
+        "image":"images/dishes/mangonada.jpg",
+        "category":["Juice'n Shakes"]
+    },
+    {
+        "id":23,
+        "name":"Mexican Soda",
+        "cuisine":"Mexican",
+        "image":"images/dishes/soda.jpg",
+        "category":["Juice'n Shakes"]
+    },
+    {
+        "id":24,
+        "name":"Tieguanyin",
+        "cuisine":"Chinese",
+        "image":"images/dishes/ctea.jpg",
+        "category":["Juice'n Shakes"]
+    },
+    {
+        "id":25,
+        "name":"Yunnan Coffee",
+        "cuisine":"Chinese",
+        "image":"images/dishes/yunnan.jpg",
+        "category":["Juice'n Shakes"]
+    },
+    {
+        "id":26,
+        "name":"Sakura Tea",
+        "cuisine":"Japanese",
+        "image":"images/dishes/sakura.jpg",
+        "category":["Juice'n Shakes"]
+    },
+    {
+        "id":27,
+        "name":"Amazake",
+        "cuisine":"Japanese",
+        "image":"images/dishes/amazake.jpg",
+        "category":["Juice'n Shakes"]
+    },
+    {
+        "id":28,
+        "name":"Aperitivo",
+        "cuisine":"Italian",
+        "image":"images/dishes/aperitivo.jpg",
+        "category":["Juice'n Shakes"]
+    },
+    {
+        "id":29,
+        "name":"Negroni",
+        "cuisine":"Chinese",
+        "image":"images/dishes/negroni.jpg",
+        "category":["Juice'n Shakes"]
+    },
+    {
+        "id":30,
+        "name":"Pani-Puri",
+        "cuisine":"Indian",
+        "image":"images/dishes/panipuri.jpg",
+        "category":["Starters"]
+    },
+    {
+        "id":31,
+        "name":"Samosa",
+        "cuisine":"Indian",
+        "image":"images/dishes/samosa.jpg",
+        "category":["Starters"]
+    },
+   {
+        "id":32,
+        "name":"Papdi-Chat",
+        "cuisine":"Indian",
+        "image":"images/dishes/papdi-chat.jpg",
+        "category":["Starters"]
+    },
+    {
+        "id":33,
+        "name":"Sweet Corn",
+        "cuisine":"Indian",
+        "image":"images/dishes/sweetcorn.jpg",
+        "category":["Starters"]
+    },
+    {
+        "id":34,
+        "name":"Paneer Tikka",
+        "cuisine":"Indian",
+        "image":"images/dishes/paneertikka.jpg",
+        "category":["Starters"]
+    },
+    {
+        "id":35,
+        "name":"Guo-Tieh",
+        "cuisine":"Chinese",
+        "image":"images/dishes/guo-tieh.jpg",
+        "category":["Starters"]
+    },
+    {
+        "id":36,
+        "name":"Roast Pork Pastry Puffs",
+        "cuisine":"Chinese",
+        "image":"images/dishes/puffs.jpg",
+        "category":["Starters"]
+    },
+    {
+        "id":37,
+        "name":"Egg Foo Young",
+        "cuisine":"Chinese",
+        "image":"images/dishes/egg.jpg",
+        "category":["Starters"]
+    },
+    {
+        "id":38,
+        "name":"Ceviche",
+        "cuisine":"Mexican",
+        "image":"images/dishes/ceviche.jpg",
+        "category":["Starters"]
+    },
+    {
+        "id":39,
+        "name":"Shrimp-Tostada",
+        "cuisine":"Mexican",
+        "image":"images/dishes/shrimp.jpg",
+        "category":["Starters"]
+    },
+    {
+        "id":40,
+        "name":"Tomato Bruschetta",
+        "cuisine":"Italian",
+        "image":"images/dishes/tomatobruschetta.jpg",
+        "category":["Starters"]
+    },
+    {
+        "id":41,
+        "name":"Caprese Salad",
+        "cuisine":"Italian",
+        "image":"images/dishes/capresesalad.jpg",
+        "category":["Starters"]
+    },
+    {
+        "id":42,
+        "name":"Pork Gyoza",
+        "cuisine":"Japanese",
+        "image":"images/dishes/gyoza.jpg",
+        "category":["Starters"]
+    },
+    {
+        "id":43,
+        "name":"Tamago Sando",
+        "cuisine":"Japanese",
+        "image":"images/dishes/sandwich.jpg",
+        "category":["Starters"]
+    },
+    {
+        "id":44,
+        "name":"Udon",
+        "cuisine":"Japanese",
+        "image":"images/dishes/udon.jpg",
+        "category":["Non-Vegetarian"]
+    },
+    {
+        "id":45,
+        "name":"Tofu",
+        "cuisine":"Japanese",
+        "image":"images/dishes/tofu.jpg",
+        "category":["Non-Vegetarian"]
+    },
+    {
+        "id":46,
+        "name":"Chilaquiles",
+        "cuisine":"Mexican",
+        "image":"images/dishes/chilaquiles.jpg",
+        "category":["Non-Vegetarian"]
+    },
+    {
+        "id":47,
+        "name":"Pozole",
+        "cuisine":"Mexican",
+        "image":"images/dishes/pozole.jpg",
+        "category":["Non-Vegetarian"]
+    },
+    {
+        "id":48,
+        "name":"Peanut Noodle with Chicken",
+        "cuisine":"Italian",
+        "image":"images/dishes/peanutnoodle.jpg",
+        "category":["Non-Vegetarian"]
+    } 
+]
